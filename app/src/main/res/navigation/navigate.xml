@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigate"
+    app:startDestination="@id/masterFragment">
+
+    <fragment
+        android:id="@+id/masterFragment"
+        android:name="com.example.werewolfkiller.MasterFragment"
+        android:label="fragment_master"
+        tools:layout="@layout/fragment_master">
+        <action
+            android:id="@+id/action_masterFragment_to_enterFragment"
+            app:destination="@id/enterFragment" />
+        <action
+            android:id="@+id/action_masterFragment_to_configureFragment"
+            app:destination="@id/configureFragment" />
+        <action
+            android:id="@+id/action_masterFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_masterFragment_to_personFragment"
+            app:destination="@id/personFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterFragment"
+        android:name="com.example.werewolfkiller.woveskill.EnterFragment"
+        android:label="fragment_enter"
+        tools:layout="@layout/fragment_enter">
+        <action
+            android:id="@+id/action_enterFragment_to_masterFragment"
+            app:destination="@id/masterFragment" />
+        <action
+            android:id="@+id/action_enterFragment_to_cellFragment"
+            app:destination="@id/cellFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cellFragment"
+        android:name="com.example.werewolfkiller.woveskill.CellFragment"
+        android:label="fragment_cell"
+        tools:layout="@layout/fragment_cell">
+        <action
+            android:id="@+id/action_cellFragment_to_masterFragment"
+            app:destination="@id/masterFragment" />
+        <action
+            android:id="@+id/action_cellFragment_to_configureFragment"
+            app:destination="@id/configureFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/configureFragment"
+        android:name="com.example.werewolfkiller.woveskill.ConfigureFragment"
+        android:label="fragment_configure"
+        tools:layout="@layout/fragment_configure">
+        <action
+            android:id="@+id/action_configureFragment_to_cellFragment"
+            app:destination="@id/cellFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.werewolfkiller.activity.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <argument
+            android:name="res"
+            app:argType="string"
+            android:defaultValue='" "' />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.werewolfkiller.activity.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.example.werewolfkiller.activity.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" >
+        <action
+            android:id="@+id/action_editFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personFragment"
+        android:name="com.example.werewolfkiller.PersonFragment"
+        android:label="fragment_person"
+        tools:layout="@layout/fragment_person" >
+        <action
+            android:id="@+id/action_personFragment_to_masterFragment"
+            app:destination="@id/masterFragment" />
+    </fragment>
+</navigation>

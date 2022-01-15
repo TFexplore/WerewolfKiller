@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">桌游社</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="pwd_world">1234567890.qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM</string>
+    <string name="use_world">1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM</string>
+
+    <!-- 检索 -->
+    <string name="demo_list_search">检索</string>
+    <string name="demo_desc_search">通过地图检索获取海量POI等</string>
+    <string name="demo_name_suggestion_search">地点检索</string>
+    <string name="demo_desc_suggestion_search">结合sug检索和POI精准找到期望POI</string>
+
+    <!-- 字体 -->
+    <string name="PingFang_SC_Medium">PingFang-SC-Medium</string>
+    <string name="PingFangSC_Regular">PingFangSC-Regular</string>
+    <string name="PingFangSC_Semibold">PingFangSC-Semibold</string>
+
+    <!-- 建议检索 -->
+    <string name="in">在</string>
+    <string name="search">市内找</string>
+    <string name="defaultCity">北京</string>
+    <string name="search_poi">检索</string>
+
+</resources>
