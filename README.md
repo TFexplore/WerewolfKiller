@@ -11,6 +11,7 @@
 ***
 
 截图：
+https://github.com/TFexplore/WerewolfKiller/issues/1#issue-1104938259
 
 <br/>
 
